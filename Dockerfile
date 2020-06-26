@@ -5,7 +5,7 @@ FROM node:alpine as builder
 WORKDIR app
 
 # Download and install dependency. To run the npm install command, we only need the 'package.json' file.
-COPY ./package.json ./
+COPY package*.json ./
 RUN npm install
 
 # The ./ ./ means that everything from the simpleweb directory will be copied into the image.
