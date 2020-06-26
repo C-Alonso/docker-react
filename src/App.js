@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopen er noreferrer"
         >
-          Learn React
+          Be a Shevo
         </a>
       </header>
     </div>
