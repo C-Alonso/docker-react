@@ -17,6 +17,7 @@ RUN npm run build
 
 #Now we start with the second phase.
 FROM nginx
-COPY --from=builder /app/build /usr/share/nginx/html
+EXPOSE 80
+COPY --from=0 /app/build /usr/share/nginx/html
 
 #The start nginx command is added automatically.
