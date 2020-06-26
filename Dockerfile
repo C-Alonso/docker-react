@@ -1,5 +1,5 @@
 # Use an existing docker image as base. "as builder" is used as a tag to identify this image as belongin to the "building phase".
-FROM node:alpine as builder
+FROM node:alpine
 
 # So the folders files copied on the next command are pasted on the specified directory (/usr/app)
 WORKDIR "/app"
